@@ -1,0 +1,31 @@
+{
+  "name": "projeto-api-vue",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@vueuse/core": "^9.6.0",
+    "axios": "^1.1.3",
+    "pinia": "^2.0.28",
+    "tsc": "^2.0.4",
+    "uuid": "^9.0.0",
+    "vue": "^3.2.41",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@types/node": "^18.11.8",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^8.26.0",
+    "eslint-plugin-vue": "^9.7.0",
+    "prettier": "^2.7.1",
+    "vite": "^3.2.2"
+  },
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9wZmEuZm9yZWNhLmNvbVwvYXV0aG9yaXplXC90b2tlbiIsImlhdCI6MTY2NTQ4OTY2MywiZXhwIjo5OTk5OTk5OTk5LCJuYmYiOjE2NjU0ODk2NjMsImp0aSI6ImRmODQ3Y2M5MjEzMDdjNmYiLCJzdWIiOiJ3ZWRsZXlzaWx2YTIxMDUiLCJmbXQiOiJYRGNPaGpDNDArQUxqbFlUdGpiT2lBPT0ifQ.MD8iZAi3M5WRUA0d0r0Xd-DgrI_5WB0LrkaRy8wkLzg",
+  "key": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9wZmEuZm9yZWNhLmNvbVwvYXV0aG9yaXplXC90b2tlbiIsImlhdCI6MTY2NTQ4OTY2MywiZXhwIjo5OTk5OTk5OTk5LCJuYmYiOjE2NjU0ODk2NjMsImp0aSI6ImRmODQ3Y2M5MjEzMDdjNmYiLCJzdWIiOiJ3ZWRsZXlzaWx2YTIxMDUiLCJmbXQiOiJYRGNPaGpDNDArQUxqbFlUdGpiT2lBPT0ifQ.MD8iZAi3M5WRUA0d0r0Xd-DgrI_5WB0LrkaRy8wkLzg"
+}
