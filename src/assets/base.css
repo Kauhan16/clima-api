@@ -1,6 +1,5 @@
 
   body {
-    color: black;
   }
 
   .inputs {
@@ -9,165 +8,158 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  .button-19 {
-    appearance: button;
-    background-color: #1899d6;
-    border: solid transparent;
-    border-radius: 16px;
-    border-width: 0 0 4px;
-    box-sizing: border-box;
-    color: #ffffff;
-    cursor: pointer;
-    font-family: din-round, sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    line-height: 20px;
-    margin-left: 10px;
-    outline: none;
-    overflow: visible;
-    padding: 13px 16px;
+  article {
     text-align: center;
-    text-transform: uppercase;
-    touch-action: manipulation;
-    transform: translateZ(0);
-    transition: filter 0.2s;
-    user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-    height: 48px;
+    margin: 20px;
   }
 
-  .button-19:after {
-    background-clip: padding-box;
-    background-color: #78a6f5;
-    border: solid transparent;
-    border-radius: 16px;
-    border-width: 0 0 4px;
-    bottom: -4px;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-  }
-
-  .button-19:focus {
-    user-select: auto;
-  }
-
-  .button-19:hover:not(:disabled) {
-    filter: brightness(1.1);
-    -webkit-filter: brightness(1.1);
-  }
-
-  .button-19:disabled {
-    cursor: auto;
+  .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
   }
 
   input {
-    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
     border-radius: 5px;
-    padding-left: 5px;
+    margin-right: 10px;
   }
 
-
-  .card-info-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 15px;
-    font-weight: 700;
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
-  .titulo {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
+
+  h2 {
+    color: #333;
   }
 
   .box {
-    top: 20px;
-    border: 2px solid;
-    border-color: white;
-    color: black;
-    background-color: #78a6f5;
-    min-height: 1000px;
-    min-width: 1800px;
-    position: flex;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 16px 0px 16px 0px;
-  }
-  .card {
-    background-image: linear-gradient(to bottom, #78a6f5, #b6d0fc, #ffffff);
-    top: 20px;
-    border: 2px solid;
-    border-color: white;
-    min-height: 350px;
-    min-width: 450px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 16px 0px 16px 0px;
-    box-shadow: 10px 4px 7px #545454;
-    margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    padding: 30px;
-   
-  }
-  .card-info1{
-    padding-right: 15px;
-  }
-
-  .icon {
-    height: 120px;
-    width: 120px;
-  }
-
-  .climaul {
-    padding: 0;
-    padding-top: 15px;
-    position: relative;
-    margin-top: 20%;
-    list-style: none;
-    line-height: 1.5;
-  }
-
-  .climah1 {
-    position: absolute;
-    padding-top: 15px;
-    top: 20px;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-  }
-  .card-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
-   
   }
-  .sensacao-termica {
-    color: gray;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .temperatura {
-    font-size: 50px;
-    font-weight: bold;
-  }
-  .card-info-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 15px;
-    font-weight: 700;
-  }
+
   .content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
+
+  .card {
+    background-color: #ffffff; 
+    transition: background-color 0.3s;
+    width: 300px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+
+    }
+    
+    .card:hover {
+      background-color: #f0f0f0; }
+    .card.temperature-0-10 {
+      background-color: #1e88e5;}
+    .card.temperature-10-20 {
+      background-color: #1976d2;
+    }
+    
+    .card.temperature-20-30 {
+      background-color: #ff9800;
+    }
+    
+    .card.temperature-30 {
+      background-color: #e57373;
+  
+    }
+
+  .card.highlight {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
+  }
+  
+  .card.highlight:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .climah1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .climaul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+
+  .temperatura {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .sensacao-termica {
+    font-size: 16px;
+    color: #555;
+  }
+
+  .card-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .card-info1,
+  .card-info2 {
+    flex: 1;
+  }
+
+  .card-info1 li,
+  .card-info2 li {
+    margin-bottom: 5px;
+    color: #000000;
+  }
+
+  .p {
+    text-align: center;
+  }
+
+  .p h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+ 
+  .clic {
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgba(77, 77, 77, 0.3);
+    transition: background-color 0.3s;
+  }
+  
+  .clic:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+

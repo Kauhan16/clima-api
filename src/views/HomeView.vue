@@ -3,7 +3,6 @@
 // const forecaApi = new ForecaAPI();
 import { mapStores, mapActions, mapState } from "pinia";
 import { useClimaStore } from "@/stores/clima";
-
 export default {
   data() {
     return {
@@ -73,4 +72,114 @@ export default {
   </main>
 </template>
 
-<style></style>
+<style>
+  article {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .climah1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .climaul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+
+  .temperatura {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .sensacao-termica {
+    font-size: 16px;
+  }
+
+  .card-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .card-info1,
+  .card-info2 {
+    flex: 1;
+  }
+
+  .card-info1 li,
+  .card-info2 li {
+    margin-bottom: 5px;
+  }
+
+  .p {
+    text-align: center;
+  }
+
+  .p h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+</style>

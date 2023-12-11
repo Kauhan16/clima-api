@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="@/assets/logosite.png" alt="" />
+    <img src="@/assets/logo.png" alt="" />
 
     <div class="menu">
       <span class="clic"> <RouterLink to="/">Home</RouterLink> </span>
@@ -20,32 +20,33 @@ header span {
 
 header {
   font-family: "Nanum Gothic", sans-serif;
-  padding: 40px;
+  padding: 20px;
   display: flex;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to right, rgb(82, 188, 202), #78a6f5);
-  font-size: 30px;
+  background-color: rgb(82, 188, 202);
+  font-size: 24px;
   justify-content: space-between;
 }
 
 .menu {
-  margin-right: 15rem;
+  margin-right: 5rem;
+  display: flex;
 }
 
 .clic {
-  color: black;
-  background-color: white;
+  color: white;
+  padding: 10px;
   border-radius: 4px;
-  box-shadow: 3px 3px 3px rgb(77, 77, 77);
+  box-shadow: 3px 3px 3px rgba(77, 77, 77, 0.3);
+  transition: background-color 0.3s;
 }
 
 .clic:hover {
-  background-color: rgb(179, 233, 255);
-  transition: background 1s;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 img {
-  width: 10rem;
+  width: 8rem;
 }
 </style>
